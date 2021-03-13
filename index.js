@@ -1,7 +1,8 @@
 const express= require('express');
 const app = express();
+const path = require('path'); 
 const logger = require('./Middelware/logger');
-app.use(logger);
+// app.use(logger);
 app.use(express.static('public'));
 
 app.get('/contact', (req, res) => {
